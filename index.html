@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Vaibhav 💖</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #ffe4ec, #ffffff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #e11d48;
+    }
+    p {
+      color: #444;
+      line-height: 1.6;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: #e11d48;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #be123c;
+    }
+    #surprise {
+      display: none;
+      margin-top: 20px;
+      color: #e11d48;
+      font-weight: bold;
+    }
+    img {
+      margin-top: 20px;
+      width: 100%;
+      border-radius: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Hi Baby 💖</h1>
+
+    <p>
+      Okay listen — yes you’re in Tokyo, yes it’s cool, yes it’s aesthetic…
+      but also yes, I miss you like CRAZY.
+    </p>
+
+    <p>
+      No matter where you go, you’re still <strong>my Vaibhav</strong>.
+    </p>
+
+    <p><strong>I love you more than anything.</strong></p>
+
+    <button onclick="showSurprise()">Click if you miss me</button>
+
+    <div id="surprise">
+      Congrats 🎉  
+      <br>
+      You officially miss me.  
+      <br>
+      I miss you more.  
+      <br><br>
+      Come back soon, baby 😌💘
+    </div>
+
+    <!-- Replace the image link below with your photo -->
+    <img src="photo.jpg" alt="Us 💕">
+    
+    <p style="margin-top:15px; font-size: 14px;">— from me, always 💗</p>
+  </div>
+
+  <script>
+    function showSurprise() {
+      document.getElementById("surprise").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
