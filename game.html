@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You, Baby 💘</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffe4ec, #fff);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .box {
+      background: white;
+      padding: 35px 30px;
+      border-radius: 25px;
+      max-width: 420px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    }
+
+    h1 {
+      color: #e11d48;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    p {
+      color: #555;
+      font-size: 15px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    button {
+      padding: 14px 12px;
+      border-radius: 18px;
+      border: none;
+      background: linear-gradient(135deg, #fbcfe8, #ffe4ec);
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      cursor: pointer;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    }
+
+    #message {
+      margin-top: 30px;
+      min-height: 45px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #e11d48;
+      transition: all 0.2s ease;
+    }
+
+    .signature {
+      margin-top: 18px;
+      font-size: 13px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h1>Click & Find Out 💕</h1>
+    <p>Each button hides something I want to say to you.</p>
+
+    <div class="grid">
+      <button onclick="reveal(0)">Click me 👀</button>
+      <button onclick="reveal(1)">Do NOT open</button>
+      <button onclick="reveal(2)">Tokyo stole you</button>
+      <button onclick="reveal(3)">Emergency hug</button>
+      <button onclick="reveal(4)">You & me</button>
+      <button onclick="reveal(5)">One last thing</button>
+    </div>
+
+    <div id="message"></div>
+
+    <div class="signature">— from your girl 💗</div>
+  </div>
+
+  <script>
+    const messages = [
+      "I miss you more than you think 🥺",
+      "You clicked it anyway. Typical. I love you 😌",
+      "Yes Tokyo is cool, but I’m cooler.",
+      "Imagine me hugging you right now. Don’t move.",
+      "You’re my favorite person. Always.",
+      "Come back soon, baby. I’m waiting 💘"
+    ];
+
+    function reveal(index) {
+      document.getElementById("message").innerText = messages[index];
+    }
+  </script>
+
+</body>
+</html>
